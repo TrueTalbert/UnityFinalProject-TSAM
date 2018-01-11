@@ -4,20 +4,40 @@ using UnityEngine;
 
 public class CubeController : MonoBehaviour {
 	public Rigidbody rb;
-	// Use this for initialization
+	public RigidbodyConstraints constraints;
+	public bool rightside;
+	public bool onwall;
+
 	void Start () {
 		rb = GetComponent<Rigidbody> ();
-		rb.velocity = new Vector3(0, 6, 6);
+		rb.velocity = new Vector3(6, 6, 6);
+		rightside = true;
 	}
-	
-	// Update is called once per frame
-	void Update () {
 
-
+	void FixedUpdate () {
+		if (Input.GetKeyDown ("space") && onwall) {
+			Physics.gravity = new Vector3(0, -9.8f, 0);
+			rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
+			if (rightside){
+				rb.velocity = new Vector3 (0, 6, -6);
+				rightside = false;
+			} else {
+				rb.velocity = new Vector3 (0, 6, 6);
+				rightside = true;
+			}
+			onwall = false;
+		}
+		Vector3 vel = rb.velocity;
+		vel.x = 6;
+		rb.velocity = vel;
 	}
 		
 	void OnCollisionEnter(Collision collision)
 	{
-		
+		rb.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
+		Physics.gravity = new Vector3(0, -4f, 0);
+		rb.velocity = new Vector3 (0, 0, 0);
+		onwall = true;
 	}
+		
 }
