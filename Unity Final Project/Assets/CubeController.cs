@@ -10,7 +10,7 @@ public class CubeController : MonoBehaviour {
 
 	void Start () {
 		rb = GetComponent<Rigidbody> ();
-		rb.velocity = new Vector3(6, 6, 6);
+		rb.velocity = new Vector3(12, 6, 6);
 		rightside = true;
 	}
 
@@ -26,6 +26,7 @@ public class CubeController : MonoBehaviour {
 				rightside = true;
 			}
 			onwall = false;
+			//transform.Rotate (0, 180, 0);
 		}
 		Vector3 vel = rb.velocity;
 		vel.x = 6;
