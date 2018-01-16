@@ -58,7 +58,7 @@ public class CubeController : MonoBehaviour {
 		if (!jump) {
 			onwall = false;
 			Physics.gravity = new Vector3(0, -9.8f, 0);
-			rb.constraints = RigidbodyConstraints.None;
+			rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
 		}
 	}
 		
