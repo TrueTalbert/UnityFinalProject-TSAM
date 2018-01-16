@@ -8,10 +8,11 @@ public class CubeController : MonoBehaviour {
 	public bool rightside;
 	public bool onwall;
 	public bool dead;
+	public bool jump;
 
 	void Start () {
 		rb = GetComponent<Rigidbody> ();
-		rb.velocity = new Vector3(12, 6, 6);
+		rb.velocity = new Vector3(8, 6, 6);
 		rightside = true;
 		dead = false;
 	}
@@ -28,10 +29,11 @@ public class CubeController : MonoBehaviour {
 				rightside = true;
 			}
 			onwall = false;
+			jump = true;
 			//transform.Rotate (0, 180, 0);
 		}
 		Vector3 vel = rb.velocity;
-		vel.x = 6;
+		vel.x = 8;
 		rb.velocity = vel;
 	}
 		
@@ -42,12 +44,21 @@ public class CubeController : MonoBehaviour {
 			Physics.gravity = new Vector3 (0, -4f, 0);
 			rb.velocity = new Vector3 (0, 0, 0);
 			onwall = true;
+			jump = false;
 		}
 		if (collision.gameObject.tag == "Edgy") {
 			Physics.gravity = new Vector3(0, -9.8f, 0);
 			rb.constraints = RigidbodyConstraints.None;
 			dead = true;
 
+		}
+	}
+	void OnCollisionExit(Collision collision)
+	{
+		if (!jump) {
+			onwall = false;
+			Physics.gravity = new Vector3(0, -9.8f, 0);
+			rb.constraints = RigidbodyConstraints.None;
 		}
 	}
 		
