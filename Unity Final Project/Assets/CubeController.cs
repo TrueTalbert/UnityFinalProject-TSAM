@@ -35,10 +35,12 @@ public class CubeController : MonoBehaviour {
 		
 	void OnCollisionEnter(Collision collision)
 	{
-		rb.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
-		Physics.gravity = new Vector3(0, -4f, 0);
-		rb.velocity = new Vector3 (0, 0, 0);
-		onwall = true;
+		if (collision.gameObject.tag == "Wall") {
+			rb.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
+			Physics.gravity = new Vector3 (0, -4f, 0);
+			rb.velocity = new Vector3 (0, 0, 0);
+			onwall = true;
+		}
 	}
 		
 }
