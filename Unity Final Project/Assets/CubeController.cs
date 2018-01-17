@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class CubeController : MonoBehaviour {
 	public Rigidbody rb;
@@ -9,12 +11,16 @@ public class CubeController : MonoBehaviour {
 	public bool onwall;
 	public bool dead;
 	public bool jump;
+	private AssetBundle myLoadedAssetBundle;
+	private string[] scenePaths;
 
 	void Start () {
 		rb = GetComponent<Rigidbody> ();
 		rb.velocity = new Vector3(8, 6, 6);
 		rightside = true;
 		dead = false;
+		myLoadedAssetBundle = AssetBundle.LoadFromFile("Assets/levels");
+		scenePaths = myLoadedAssetBundle.GetAllScenePaths();
 	}
 
 	void FixedUpdate () {
@@ -51,6 +57,10 @@ public class CubeController : MonoBehaviour {
 			rb.constraints = RigidbodyConstraints.None;
 			dead = true;
 
+		}
+		if (collision.gameObject.tag == "End") {
+			SceneManager.LoadScene("scene1", LoadSceneMode.Additive);
+			print ("test");
 		}
 	}
 	void OnCollisionExit(Collision collision)
