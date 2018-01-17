@@ -56,6 +56,7 @@ public class CubeController : MonoBehaviour {
 		}
 		if (collision.gameObject.tag == "End") {
 			Application.LoadLevel("level" + levelnumber.ToString());
+			levelnumber += 1;
 			print ("test");
 		}
 	}
