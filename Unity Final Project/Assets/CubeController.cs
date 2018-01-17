@@ -34,6 +34,9 @@ public class CubeController : MonoBehaviour {
 			jump = true;
 			//transform.Rotate (0, 180, 0);
 		}
+		if (Input.GetKeyDown ("r")){
+			Application.LoadLevel(Application.loadedLevel);
+		}
 		Vector3 vel = rb.velocity;
 		vel.x = 8;
 		rb.velocity = vel;

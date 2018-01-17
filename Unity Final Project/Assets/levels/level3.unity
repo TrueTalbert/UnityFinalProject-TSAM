@@ -227,7 +227,7 @@ MonoBehaviour:
   onwall: 0
   dead: 0
   jump: 0
-  levelnumber: 0
+  levelnumber: 4
 --- !u!1001 &59155169
 Prefab:
   m_ObjectHideFlags: 0
