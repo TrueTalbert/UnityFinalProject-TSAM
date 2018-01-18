@@ -43,7 +43,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_GIWorkflowMode: 1
+  m_GIWorkflowMode: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -86,8 +86,7 @@ LightmapSettings:
     m_PVRFilteringAtrousColorSigma: 1
     m_PVRFilteringAtrousNormalSigma: 1
     m_PVRFilteringAtrousPositionSigma: 1
-  m_LightingDataAsset: {fileID: 112000002, guid: 6753bf9224a7a904988181d85a314a74,
-    type: 2}
+  m_LightingDataAsset: {fileID: 0}
   m_ShadowMaskMode: 2
 --- !u!196 &4
 NavMeshSettings:
@@ -109,7 +108,6 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
 --- !u!1001 &36195502
 Prefab:
   m_ObjectHideFlags: 0
@@ -168,8 +166,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
   m_IsPrefabParent: 0
-=======
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
 --- !u!1 &53063517
 GameObject:
   m_ObjectHideFlags: 0
@@ -179,10 +175,10 @@ GameObject:
   m_Component:
   - component: {fileID: 53063522}
   - component: {fileID: 53063521}
+  - component: {fileID: 53063520}
   - component: {fileID: 53063519}
   - component: {fileID: 53063518}
   - component: {fileID: 53063523}
-  - component: {fileID: 53063520}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -237,18 +233,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!136 &53063520
-CapsuleCollider:
+--- !u!65 &53063520
+BoxCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 53063517}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: df8bdd404fadffe4aa5f963b896f1d31, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &53063521
 MeshFilter:
@@ -264,16 +259,12 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 53063517}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 150, z: 0}
+  m_LocalPosition: {x: 0, y: 50, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 111164483}
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 2
-=======
   m_RootOrder: 15
->>>>>>> bc3ed10b59b99091345c9962c053f3b9b5350264
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &53063523
 MonoBehaviour:
@@ -292,94 +283,6 @@ MonoBehaviour:
   onwall: 0
   dead: 0
   jump: 0
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
-=======
-  levelnumber: 4
---- !u!1001 &59155169
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 932702127}
-    m_Modifications:
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &86664017
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 2115997828}
-    m_Modifications:
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-  m_IsPrefabParent: 0
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
 --- !u!1 &111164478
 GameObject:
   m_ObjectHideFlags: 0
@@ -483,11 +386,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sens: 2
   hideCursor: 1
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
 --- !u!1001 &287327094
-=======
---- !u!1001 &138001902
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -496,7 +395,6 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.x
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
       value: 66.73
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
@@ -506,17 +404,6 @@ Prefab:
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.z
       value: -7.726296
-=======
-      value: 212.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 113.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -8.18
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalRotation.x
@@ -536,97 +423,52 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
-      value: 10
-=======
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1681728337912724, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_Name
       value: Wall (25)
-=======
-      value: 9
->>>>>>> bc3ed10b59b99091345c9962c053f3b9b5350264
-      objectReference: {fileID: 0}
-    - target: {fileID: 1681728337912724, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
-      propertyPath: m_Name
-      value: Wall (8)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 36.560673
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 22.209028
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
   m_IsPrefabParent: 0
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
 --- !u!1001 &321558303
-=======
---- !u!1001 &174356553
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1184357876}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.x
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
-      value: 249.69
-=======
-      value: 0
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
+      value: 253.01
       objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.y
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
       value: 17.72
-=======
-      value: 0
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
       objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.z
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
-      value: 6.32
-=======
-      value: 1.5
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
+      value: 3.95
       objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalRotation.x
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
       value: 0.29070213
-=======
-      value: -0
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
       objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalRotation.w
       value: 0.9568136
       objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
       value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 1681728337912724, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
@@ -640,71 +482,51 @@ Prefab:
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalScale.y
       value: 9.990253
-=======
-      value: 0
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 33.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
   m_IsPrefabParent: 0
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
 --- !u!1001 &357492579
-=======
---- !u!1001 &247925225
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1054501886}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.x
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
       value: 237.92
-=======
-      value: 0
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
       objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.y
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
-      value: 14.99
-=======
-      value: 0
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
+      value: 16.27
       objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.z
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
       value: -0
-=======
-      value: 1.5
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
       objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
       value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 1681728337912724, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
@@ -718,67 +540,47 @@ Prefab:
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalScale.y
       value: 9.990253
-=======
-      value: 0
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
   m_IsPrefabParent: 0
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
 --- !u!1001 &384125307
-=======
---- !u!1001 &357194803
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1385857763}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.x
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
       value: 220.17
-=======
-      value: 0
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
       objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.y
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
       value: 15.96
-=======
-      value: 0
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
       objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.z
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
       value: 11.58
-=======
-      value: -1
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
       objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
       value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 1681728337912724, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
@@ -792,80 +594,11 @@ Prefab:
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalScale.y
       value: 9.990253
-=======
-      value: 0
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &406034970
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 160
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 123
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
-      propertyPath: m_LocalPosition.z
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
-      value: 2.8
-=======
-      value: -3
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
-      propertyPath: m_RootOrder
-<<<<<<< HEAD
-      value: 8
-=======
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
-      value: 14
-=======
-      value: 7
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
->>>>>>> bc3ed10b59b99091345c9962c053f3b9b5350264
-      objectReference: {fileID: 0}
-    - target: {fileID: 1681728337912724, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
-      propertyPath: m_Name
-      value: Wall (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 36.560673
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 10.359168
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &557431490
+--- !u!1001 &500570303
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -874,27 +607,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.x
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
-      value: 147.6
+      value: 197.07
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 16.7
+      value: 17.8
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.z
       value: 2.8
-=======
-      value: 285
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 18.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -15
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalRotation.x
@@ -914,23 +635,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_RootOrder
-      value: 12
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 1681728337912724, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_Name
-      value: Wall (10)
+      value: Wall (12)
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalScale.x
-      value: 64.54907
+      value: 32.59
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalScale.y
-      value: 22.209028
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 9.990253
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
@@ -944,51 +661,35 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 177
+      value: 147.6
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.y
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
-      value: 18.3
+      value: 16.7
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -9
-=======
-      value: 113.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -14.98
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
+      value: 2.8
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0.0000001872535
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0.0000001872535
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 3.5063874e-14
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
-      value: 9
-=======
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
-      value: 22
-=======
-      value: 8
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
->>>>>>> bc3ed10b59b99091345c9962c053f3b9b5350264
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1681728337912724, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_Name
@@ -1004,57 +705,106 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -0.000015258789
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -0.000015258789
+      value: 90
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &603227954
+--- !u!1001 &774846662
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2116578107}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 296.4
       objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.y
+      value: 18.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0.2841828
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
+      propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.95877016
       objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 1681728337912724, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
+      propertyPath: m_Name
+      value: Wall (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 24.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 9.990253
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -33.02
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &794764798
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 357.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 17.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -7.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0.2841828
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.95877016
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
+      propertyPath: m_RootOrder
       value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 1681728337912724, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
@@ -1072,76 +822,10 @@ Prefab:
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalEulerAnglesHint.x
       value: -33.02
-=======
-      value: 0
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &627344998
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4111857605469914, guid: 9b0efc17809d2d44fb92a00202327ef8, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 371.41
-      objectReference: {fileID: 0}
-    - target: {fileID: 4111857605469914, guid: 9b0efc17809d2d44fb92a00202327ef8, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 11.43
-      objectReference: {fileID: 0}
-    - target: {fileID: 4111857605469914, guid: 9b0efc17809d2d44fb92a00202327ef8, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -4.64
-      objectReference: {fileID: 0}
-    - target: {fileID: 4111857605469914, guid: 9b0efc17809d2d44fb92a00202327ef8, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4111857605469914, guid: 9b0efc17809d2d44fb92a00202327ef8, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4111857605469914, guid: 9b0efc17809d2d44fb92a00202327ef8, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4111857605469914, guid: 9b0efc17809d2d44fb92a00202327ef8, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4111857605469914, guid: 9b0efc17809d2d44fb92a00202327ef8, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4111857605469914, guid: 9b0efc17809d2d44fb92a00202327ef8, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 4111857605469914, guid: 9b0efc17809d2d44fb92a00202327ef8, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 18.376339
-      objectReference: {fileID: 0}
-    - target: {fileID: 4111857605469914, guid: 9b0efc17809d2d44fb92a00202327ef8, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.18376337
-      objectReference: {fileID: 0}
-    - target: {fileID: 4111857605469914, guid: 9b0efc17809d2d44fb92a00202327ef8, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 18.376337
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 9b0efc17809d2d44fb92a00202327ef8, type: 2}
-  m_IsPrefabParent: 0
---- !u!4 &664865879 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304,
-    type: 2}
-  m_PrefabInternal: {fileID: 557431490}
 --- !u!1001 &795804819
 Prefab:
   m_ObjectHideFlags: 0
@@ -1155,7 +839,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 150
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1179,11 +863,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
-      value: 3
-=======
       value: 9
->>>>>>> bc3ed10b59b99091345c9962c053f3b9b5350264
       objectReference: {fileID: 0}
     - target: {fileID: 1681728337912724, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_Name
@@ -1196,36 +876,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
   m_IsPrefabParent: 0
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
 --- !u!1001 &903960702
-=======
---- !u!4 &857895194 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304,
-    type: 2}
-  m_PrefabInternal: {fileID: 1449823614}
---- !u!4 &870389068 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304,
-    type: 2}
-  m_PrefabInternal: {fileID: 138001902}
---- !u!4 &932702127 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304,
-    type: 2}
-  m_PrefabInternal: {fileID: 2115137940}
---- !u!4 &997484755 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304,
-    type: 2}
-  m_PrefabInternal: {fileID: 406034970}
---- !u!1001 &1001890747
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
@@ -1268,46 +923,6 @@ Prefab:
   m_ParentPrefab: {fileID: 100100000, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &995324265
-=======
-    m_TransformParent: {fileID: 1772220490}
-    m_Modifications:
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &1035043915
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1316,19 +931,19 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 70
+      value: 292.5
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 135
+      value: 17.72
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -13.4
+      value: 3.95
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0.29070213
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalRotation.y
@@ -1340,133 +955,89 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.9568136
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
-      value: 6
-=======
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
       value: 23
-=======
-      value: 5
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
->>>>>>> bc3ed10b59b99091345c9962c053f3b9b5350264
       objectReference: {fileID: 0}
     - target: {fileID: 1681728337912724, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_Name
-      value: Wall (4)
+      value: Wall (20)
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalScale.x
-      value: 48.325146
+      value: 36.3
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalScale.y
-      value: 15
+      value: 9.990253
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 33.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &1054501886 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304,
-    type: 2}
-  m_PrefabInternal: {fileID: 571270677}
---- !u!1001 &1087116238
+--- !u!1001 &1137412555
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 997484755}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 258.1
       objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.y
+      value: 17.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -7.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0.2841828
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
+      propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.95877016
       objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
       value: 20
-=======
-      value: 0
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
+      objectReference: {fileID: 0}
+    - target: {fileID: 1681728337912724, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
+      propertyPath: m_Name
+      value: Wall (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 37.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 9.990253
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -33.02
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &1179456453
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 870389068}
-    m_Modifications:
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-  m_IsPrefabParent: 0
---- !u!4 &1184357876 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304,
-    type: 2}
-  m_PrefabInternal: {fileID: 1497190240}
 --- !u!1 &1211969827
 GameObject:
   m_ObjectHideFlags: 0
@@ -1498,7 +1069,7 @@ Light:
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -1532,44 +1103,43 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1001 &1290819233
+--- !u!1001 &1221958377
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 664865879}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 325.9
       objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.y
+      value: 17.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -7.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0.2841828
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
+      propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.95877016
       objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
       value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 1681728337912724, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
@@ -1587,14 +1157,10 @@ Prefab:
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalEulerAnglesHint.x
       value: -33.02
-=======
-      value: 0
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
   m_IsPrefabParent: 0
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
 --- !u!1001 &1260263331
 Prefab:
   m_ObjectHideFlags: 0
@@ -1730,9 +1296,6 @@ Prefab:
   m_ParentPrefab: {fileID: 100100000, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1706253477
-=======
---- !u!1001 &1345457220
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1741,19 +1304,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 110
+      value: 220.17
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 123
+      value: 19.31
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.z
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
       value: 1.56
-=======
-      value: -3
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1773,23 +1332,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
-      value: 5
-=======
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
       value: 17
-=======
-      value: 4
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
->>>>>>> bc3ed10b59b99091345c9962c053f3b9b5350264
       objectReference: {fileID: 0}
     - target: {fileID: 1681728337912724, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_Name
-      value: Wall (3)
+      value: Wall (14)
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalScale.x
-      value: 48.325146
+      value: 12.46
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalScale.y
@@ -1798,54 +1349,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &1385857763 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304,
-    type: 2}
-  m_PrefabInternal: {fileID: 1035043915}
---- !u!1001 &1392736309
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 857895194}
-    m_Modifications:
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &1449823614
+--- !u!1001 &1716890731
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1854,23 +1358,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.x
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
       value: 187.48
-=======
-      value: 365.7
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 18.4
+      value: 16.3
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.z
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
       value: 10.6
-=======
-      value: -15
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1890,15 +1386,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 13
-=======
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
-      value: 13
-=======
-      value: 12
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
->>>>>>> bc3ed10b59b99091345c9962c053f3b9b5350264
       objectReference: {fileID: 0}
     - target: {fileID: 1681728337912724, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_Name
@@ -1906,20 +1394,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalScale.x
-      value: 64.54907
+      value: 32.59
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalScale.y
-      value: 22.209028
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 9.990253
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
   m_IsPrefabParent: 0
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
 --- !u!1001 &1757371431
 Prefab:
   m_ObjectHideFlags: 0
@@ -1967,9 +1450,6 @@ Prefab:
   m_ParentPrefab: {fileID: 100100000, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1780342760
-=======
---- !u!1001 &1480413295
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1978,19 +1458,19 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 250
+      value: 356.5
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 18.4
+      value: 17.72
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -8.18
+      value: 3.95
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0.29070213
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalRotation.y
@@ -2002,40 +1482,32 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.9568136
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
-      value: 11
-=======
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
       value: 25
-=======
-      value: 10
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
->>>>>>> bc3ed10b59b99091345c9962c053f3b9b5350264
       objectReference: {fileID: 0}
     - target: {fileID: 1681728337912724, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_Name
-      value: Wall (9)
+      value: Wall (22)
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalScale.x
-      value: 64.54907
+      value: 24.13
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalScale.y
-      value: 22.209028
+      value: 9.990253
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 33.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &1497190240
+--- !u!1001 &1863135764
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -2044,19 +1516,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 326.9
+      value: 233.42
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 18.4
+      value: 16.18
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.z
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
       value: 10.76
-=======
-      value: -8.18
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalRotation.x
@@ -2076,41 +1544,24 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
-      value: 14
-=======
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
       value: 18
-=======
-      value: 13
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
->>>>>>> bc3ed10b59b99091345c9962c053f3b9b5350264
       objectReference: {fileID: 0}
     - target: {fileID: 1681728337912724, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_Name
-      value: Wall (12)
+      value: Wall (15)
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalScale.x
-      value: 64.54907
+      value: 12.46
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalScale.y
-      value: 22.209028
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 9.990253
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &1772220490 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304,
-    type: 2}
-  m_PrefabInternal: {fileID: 1842044379}
---- !u!1001 &1842044379
+--- !u!1001 &2049540118
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -2119,15 +1570,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 120
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 123
+      value: 56.6
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -9.5
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalRotation.x
@@ -2147,19 +1598,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
-      value: 7
-=======
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
       value: 12
-=======
-      value: 6
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
->>>>>>> bc3ed10b59b99091345c9962c053f3b9b5350264
       objectReference: {fileID: 0}
     - target: {fileID: 1681728337912724, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_Name
-      value: Wall (5)
+      value: Wall (8)
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalScale.x
@@ -2167,65 +1610,48 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalScale.y
-      value: 8.604001
+      value: 9.990253
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
   m_IsPrefabParent: 0
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
 --- !u!1001 &2055050341
-=======
---- !u!1001 &1866635348
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1942264427}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.x
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
       value: 37.3
-=======
-      value: 0
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
       objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.y
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
       value: 58.82
-=======
-      value: 0
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
       objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.z
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
       value: 1.83
-=======
-      value: 1.5
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
       objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4701906710349680, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1681728337912724, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
@@ -2277,21 +1703,10 @@ Prefab:
     - target: {fileID: 1681728337912724, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_Name
       value: Wall (5)
-=======
-      value: 0
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 43a88351131351a4c8c87182bb92e135, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
   m_IsPrefabParent: 0
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
-=======
---- !u!4 &1942264427 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304,
-    type: 2}
-  m_PrefabInternal: {fileID: 1480413295}
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
 --- !u!1001 &2115137940
 Prefab:
   m_ObjectHideFlags: 0
@@ -2301,19 +1716,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.x
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
       value: 34.24
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.y
       value: 54.66
-=======
-      value: 28.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 150
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2337,15 +1744,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
-      value: 4
-=======
-<<<<<<< HEAD:Unity Final Project/Assets/youre mom gay.unity
       value: 10
-=======
-      value: 3
->>>>>>> a76972d8234d8431dd8207363ddcff12ee872837:Unity Final Project/Assets/levels/level3.unity
->>>>>>> bc3ed10b59b99091345c9962c053f3b9b5350264
       objectReference: {fileID: 0}
     - target: {fileID: 1681728337912724, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
       propertyPath: m_Name
@@ -2362,13 +1761,3 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d48676c9980ac5488cd78cb7ee1c304, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &2115997828 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304,
-    type: 2}
-  m_PrefabInternal: {fileID: 795804819}
---- !u!4 &2116578107 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4083963136949982, guid: 6d48676c9980ac5488cd78cb7ee1c304,
-    type: 2}
-  m_PrefabInternal: {fileID: 1345457220}
