@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class CubeController : MonoBehaviour {
 	public Rigidbody rb;
 	public RigidbodyConstraints constraints;
@@ -9,6 +10,7 @@ public class CubeController : MonoBehaviour {
 	public bool onwall;
 	public bool dead;
 	public bool jump;
+	public float levelnumber;
 
 	void Start () {
 		rb = GetComponent<Rigidbody> ();
@@ -32,6 +34,9 @@ public class CubeController : MonoBehaviour {
 			jump = true;
 			//transform.Rotate (0, 180, 0);
 		}
+		if (Input.GetKeyDown ("r")){
+			Application.LoadLevel(Application.loadedLevel);
+		}
 		Vector3 vel = rb.velocity;
 		vel.x = 8;
 		rb.velocity = vel;
@@ -51,6 +56,11 @@ public class CubeController : MonoBehaviour {
 			rb.constraints = RigidbodyConstraints.None;
 			dead = true;
 
+		}
+		if (collision.gameObject.tag == "End") {
+			Application.LoadLevel("level" + levelnumber.ToString());
+			levelnumber += 1;
+			print ("test");
 		}
 	}
 	void OnCollisionExit(Collision collision)
