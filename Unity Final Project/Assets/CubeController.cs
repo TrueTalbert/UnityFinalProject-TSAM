@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class CubeController : MonoBehaviour {
@@ -11,12 +12,16 @@ public class CubeController : MonoBehaviour {
 	public bool dead;
 	public bool jump;
 	public float levelnumber;
+	public Text respawn;
+	public float countdown;
 
 	void Start () {
 		rb = GetComponent<Rigidbody> ();
 		rb.velocity = new Vector3(8, 6, 6);
 		rightside = true;
 		dead = false;
+		respawn.enabled = false;
+
 	}
 
 	void FixedUpdate () {
@@ -37,6 +42,13 @@ public class CubeController : MonoBehaviour {
 		if (Input.GetKeyDown ("r")){
 			Application.LoadLevel(Application.loadedLevel);
 		}
+		if (!onwall) {
+			countdown += 1;
+			print (countdown);
+		}
+		if (!onwall && (countdown > 240)) {
+			respawn.enabled = true;
+		}
 		Vector3 vel = rb.velocity;
 		vel.x = 8;
 		rb.velocity = vel;
@@ -50,17 +62,20 @@ public class CubeController : MonoBehaviour {
 			rb.velocity = new Vector3 (0, 0, 0);
 			onwall = true;
 			jump = false;
+			countdown = 0;
+			print (countdown);
+			respawn.enabled = false;
 		}
 		if (collision.gameObject.tag == "Edgy") {
 			Physics.gravity = new Vector3(0, -9.8f, 0);
 			rb.constraints = RigidbodyConstraints.None;
 			dead = true;
+			respawn.enabled = true;
 
 		}
 		if (collision.gameObject.tag == "End") {
 			Application.LoadLevel("level" + levelnumber.ToString());
 			levelnumber += 1;
-			print ("test");
 		}
 	}
 	void OnCollisionExit(Collision collision)
