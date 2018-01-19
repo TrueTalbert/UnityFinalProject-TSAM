@@ -44,7 +44,6 @@ public class CubeController : MonoBehaviour {
 		}
 		if (!onwall) {
 			countdown += 1;
-			print (countdown);
 		}
 		if (!onwall && (countdown > 240)) {
 			respawn.enabled = true;
@@ -63,7 +62,6 @@ public class CubeController : MonoBehaviour {
 			onwall = true;
 			jump = false;
 			countdown = 0;
-			print (countdown);
 			respawn.enabled = false;
 		}
 		if (collision.gameObject.tag == "Edgy") {
